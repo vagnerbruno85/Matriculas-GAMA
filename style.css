@@ -2,14 +2,11 @@
 :root {
     --main-font: 'Montserrat', sans-serif;
 }
-
 * {
-<<<<<<< HEAD
     border: 0;
     box-sizing: 0;
 }
 #logo {
-=======
     box-sizing: border-box;
     margin: 0 0;
 }
@@ -68,13 +65,8 @@ h2 {
     border-radius: 5px;
   }
   #logo {
->>>>>>> bb2dcfd (feat: css visual)
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 50px;
-<<<<<<< HEAD
 }
-=======
-  }
->>>>>>> bb2dcfd (feat: css visual)
