@@ -104,7 +104,7 @@ function Listar(tbClientes){
         $("#tblListar tbody").append("<td>"+cli.Curso+"</td>");
         $("#tblListar tbody").append("<td>"+cli.DtCurso+"</td>");
         $("#tblListar tbody").append("<td>"+cli.HrCurso+"</td>");
-        $("#tblListar tbody").append("<td><img src='localStorage/edit.png' alt='"+i+"'class='btnEditar'/><img src='localStorage/delete.png' alt='"+i+"' class='btnExcluir'/></td>");
+        $("#tblListar tbody").append("<td><img src='./assets/edit.png' alt='"+i+"'class='btnEditar'/><img src='./assets/delete.png' alt='"+i+"' class='btnExcluir'/></td>");
         $("#tblListar tbody").append("</tr>");
     }
 }
