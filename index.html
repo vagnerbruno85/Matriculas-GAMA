@@ -10,6 +10,57 @@
 </head>
 
 <body>
-    
+    <form id="frmCadastro">
+        <div>
+          <img src="./assets/logoGAMA.png" id="logo" />
+          <h2>Cursos Gama-Academy</h2>
+        </div>
+        <div>
+          <label for="txtCodigo">Registro de Matrícula:</label>
+          <input type="text" id="txtRm" disabled /><br />
+        </div>
+        <div>
+          <label for="txtNome">Nome:</label>
+          <input type="text" id="txtNome" required /><br />
+        </div>
+        <div>
+          <label for="txtTelefone">Telefone:</label>
+          <input type="text" id="txtTelefone" required /><br />
+        </div>
+        <div>
+          <label for="txtEmail">Email:</label>
+          <input type="text" id="txtEmail" required /><br />
+        </div>
+        <div>
+            <label for="txtCurso">Curso:</label>
+          <select id="txtCurso" required>
+            <option value="java">Java</option>
+            <option value="javaScript">JavaScript</option>
+            <option value="bancoDados">Banco de dados</option>
+            <option value="html5">HTML5</option>
+            <option value="nodeJs">NodeJs</option>
+          </select><br />
+        </div>
+        <div>
+          <label for="txtDtCad">Data Cad:</label>
+          <input type="date" id="txtDtCad" required /><br />
+        </div>
+        <div>
+          <label for="txtHora">Hora Cad:</label>
+          <input type="time" id="txtHora" required /><br />
+        </div>
+        <div>
+          <button type="submit" class="button" value="Salvar" id="btnSalvar">
+            Salvar
+          </button>
+        </div>
+      </form>
+    <br /><br />
+    <!-- Tabela para listar os clientes com possibilidade de alterar/excluir -->
+    <fieldset>
+      <legend>Relatório de Cadastros</legend>
+      <table id="tblListar"></table>
+      <p id="prgfrm"></p>
+    </fieldset>
 </body>
 </html>
