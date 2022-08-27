@@ -82,11 +82,13 @@ function Listar(tbClientes){
     $("#tblListar").html(
         "<thead>"+
         "   <tr>"+
-        "   <th></th>"+
         "   <th>Código</th>"+
         "   <th>Nome</th>"+
         "   <th>Telefone</th>"+
         "   <th>Email</th>"+
+        "   <th>Curso</th>"+
+        "   <th>DtCurso</th>"+
+        "   <th>HrCurso</th>"+
         "   </tr>"+
         "</thead>"+
         "<tbody>"+
@@ -95,11 +97,14 @@ function Listar(tbClientes){
     for(var i in tbClientes){
         var cli = JSON.parse(tbClientes[i]);
         $("#tblListar tbody").append("<tr>");
-        $("#tblListar tbody").append("<td><img src='localStorage/edit.png' alt='"+i+"'class='btnEditar'/><img src='localStorage/delete.png' alt='"+i+"' class='btnExcluir'/></td>");
         $("#tblListar tbody").append("<td>"+cli.Codigo+"</td>");
         $("#tblListar tbody").append("<td>"+cli.Nome+"</td>");
         $("#tblListar tbody").append("<td>"+cli.Telefone+"</td>");
         $("#tblListar tbody").append("<td>"+cli.Email+"</td>");
+        $("#tblListar tbody").append("<td>"+cli.Curso+"</td>");
+        $("#tblListar tbody").append("<td>"+cli.DtCurso+"</td>");
+        $("#tblListar tbody").append("<td>"+cli.HrCurso+"</td>");
+        $("#tblListar tbody").append("<td><img src='localStorage/edit.png' alt='"+i+"'class='btnEditar'/><img src='localStorage/delete.png' alt='"+i+"' class='btnExcluir'/></td>");
         $("#tblListar tbody").append("</tr>");
     }
 }
