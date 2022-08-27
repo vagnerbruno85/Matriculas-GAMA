@@ -65,6 +65,8 @@ function Editar(tbClientes,indice_selecionado){
             Telefone : $("#txtTelefone").val(),
             Email    : $("#txtEmail").val(),
 			Curso    : $("#txtCurso").val(),
+			DtCad    : $("#txtDtCad").val(),
+        	HrCad    : $("#txtHora").val()
         });//Altera o item selecionado na tabela
     localStorage.setItem("tbClientes", JSON.stringify(tbClientes));
     alert("Informações editadas.")
