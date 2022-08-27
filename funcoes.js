@@ -22,11 +22,11 @@ $(function(){
 	    operacao = "E";
 	    indice_selecionado = parseInt($(this).attr("alt"));
 			var cli = JSON.parse(tbClientes[indice_selecionado]);
-	    $("#txtCodigo").val(cli.Codigo);
+	    $("#txtRm").val(cli.Codigo);
 	    $("#txtNome").val(cli.Nome);
 	    $("#txtTelefone").val(cli.Telefone);
 	    $("#txtEmail").val(cli.Email);
-			$("#txtCodigo").attr("readonly","readonly");
+			$("#txtRm").attr("readonly","readonly");
 		  $("#txtNome").focus();
 		});
 
@@ -40,7 +40,7 @@ $(function(){
 function Adicionar(tbClientes){
 
 		var cliente = JSON.stringify({
-        Codigo   : $("#txtCodigo").val(),
+        Codigo   : $("#txtRm").val(),
         Nome     : $("#txtNome").val(),
         Telefone : $("#txtTelefone").val(),
         Email    : $("#txtEmail").val()
@@ -54,10 +54,11 @@ function Adicionar(tbClientes){
 
 function Editar(tbClientes,indice_selecionado){
     tbClientes[indice_selecionado] = JSON.stringify({
-            Codigo   : $("#txtCodigo").val(),
+            Codigo   : $("#txtRm").val(),
             Nome     : $("#txtNome").val(),
             Telefone : $("#txtTelefone").val(),
-            Email    : $("#txtEmail").val()
+            Email    : $("#txtEmail").val(),
+			Curso    : $("txtCurso").val(),
         });//Altera o item selecionado na tabela
     localStorage.setItem("tbClientes", JSON.stringify(tbClientes));
     alert("Informações editadas.")
