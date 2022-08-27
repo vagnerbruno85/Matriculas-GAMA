@@ -1,15 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 :root {
-    --main-font: font-family: 'Montserrat', sans-serif;
+    --main-font: 'Montserrat', sans-serif;
 }
 
 * {
+<<<<<<< HEAD
     border: 0;
     box-sizing: 0;
 }
 #logo {
+=======
+    box-sizing: border-box;
+    margin: 0 0;
+}
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: #f6f6f6;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--main-font);
+  }
+
+  label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-family: var(--main-font);
+  }
+
+  input + select {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid rgb(87, 87, 87);
+  }
+
+  input:focus {
+    border: 1px solid purple;
+  }
+
+  button {
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 70px;
+    border: none;
+    font-family: var(--main-font);
+    font-weight: 700;
+    background: #95EF76;
+    border-radius: 5px;
+  }
+  #logo {
+>>>>>>> bb2dcfd (feat: css visual)
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 50px;
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> bb2dcfd (feat: css visual)
