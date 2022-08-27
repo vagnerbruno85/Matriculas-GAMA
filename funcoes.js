@@ -43,7 +43,10 @@ function Adicionar(tbClientes){
         Codigo   : $("#txtRm").val(),
         Nome     : $("#txtNome").val(),
         Telefone : $("#txtTelefone").val(),
-        Email    : $("#txtEmail").val()
+        Email    : $("#txtEmail").val(),
+        Curso    : $("#txtCurso").val(),
+        DtCad    : $("#txtDtCad").val(),
+        HrCad    : $("#txtHora").val()
     });
     tbClientes.push(cliente);
 		console.log("tbClientes - " + tbClientes);
