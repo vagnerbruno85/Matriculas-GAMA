@@ -26,6 +26,7 @@ $(function(){
 	    $("#txtNome").val(cli.Nome);
 	    $("#txtTelefone").val(cli.Telefone);
 	    $("#txtEmail").val(cli.Email);
+		$("#txtCurso").val(cli.Curso);
 			$("#txtRm").attr("readonly","readonly");
 		  $("#txtNome").focus();
 		});
@@ -61,7 +62,7 @@ function Editar(tbClientes,indice_selecionado){
             Nome     : $("#txtNome").val(),
             Telefone : $("#txtTelefone").val(),
             Email    : $("#txtEmail").val(),
-			Curso    : $("txtCurso").val(),
+			Curso    : $("#txtCurso").val(),
         });//Altera o item selecionado na tabela
     localStorage.setItem("tbClientes", JSON.stringify(tbClientes));
     alert("Informações editadas.")
