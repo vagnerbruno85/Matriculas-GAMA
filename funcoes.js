@@ -27,6 +27,8 @@ $(function(){
 	    $("#txtTelefone").val(cli.Telefone);
 	    $("#txtEmail").val(cli.Email);
 		$("#txtCurso").val(cli.Curso);
+		$("#txtDtCad").val(cli.DtCad);
+		$("#txtHora").val(cli.HrCad);
 			$("#txtRm").attr("readonly","readonly");
 		  $("#txtNome").focus();
 		});
@@ -97,13 +99,13 @@ function Listar(tbClientes){
     for(var i in tbClientes){
         var cli = JSON.parse(tbClientes[i]);
         $("#tblListar tbody").append("<tr>");
-        $("#tblListar tbody").append("<td>"+cli.Codigo+"</td>");
+        $("#tblListar tbody").append("<td>"+i+"</td>");
         $("#tblListar tbody").append("<td>"+cli.Nome+"</td>");
         $("#tblListar tbody").append("<td>"+cli.Telefone+"</td>");
         $("#tblListar tbody").append("<td>"+cli.Email+"</td>");
         $("#tblListar tbody").append("<td>"+cli.Curso+"</td>");
-        $("#tblListar tbody").append("<td>"+cli.DtCurso+"</td>");
-        $("#tblListar tbody").append("<td>"+cli.HrCurso+"</td>");
+		$("#tblListar tbody").append("<td>"+cli.DtCad+"</td>");
+        $("#tblListar tbody").append("<td>"+cli.HrCad+"</td>");
         $("#tblListar tbody").append("<td><img src='./assets/edit.png' alt='"+i+"'class='btnEditar'/><img src='./assets/delete.png' alt='"+i+"' class='btnExcluir'/></td>");
         $("#tblListar tbody").append("</tr>");
     }
